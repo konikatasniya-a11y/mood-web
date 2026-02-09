@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+    <section class="hero-section">
+        <div class="hero-overlay">
+        <div class="container">
+         <div class="row text-center">
+                 <div class="col-lg-12 d-flex flex-column align-items-center" data-aos="fade-right">
+              <h1 class="hero-title  text-light">
+                 How are you <span>FEELING</span> today?
+              </h1>
+              <p class="hero-tagline text-center text-light">Create spaces that feel right.</p>
+              <a href="#explore" class="btn btn-warning fw-bold mt-2">
+               Mood explorer
+              </a>
+            </div>
+         </div>
+        </div>
+        </div>
+    </section>
+    <section class="py-5 bg-primary-custom">
+        <div class="container">
+            <div class="row g-4">
+                <div>
+                    <h1 class="fw-bold text-center text-light shadow-sm text-lg-middle ">
+                 MOOD BOARD
+              </h1>
+                </div>
+                <div class="col-md-3 d-flex justify-content-center"  data-aos="fade-right">
+                    <div class="collection-card">
+                           <img src="images/calm.jpg" alt="">
+                   <div class="collection-content text-center">
+                        <h1 class="text-warning">CALM</h1> 
+                 
+                   </div>
+                </div>
+</div>
+                <div class="col-md-3 d-flex justify-content-center"  data-aos="fade-right">
+                    <div class="collection-card">
+                           <img src="images/focus.jpg" alt="">
+                   <div class="collection-content text-center">
+                        <h1 class="text-light text-md-middle">FOCUSED</h1>
+                        
+                   </div>
+                   </div>
+                </div>
+
+                <div class="col-md-3 d-flex justify-content-center"  data-aos="fade-right">
+                    <div class="collection-card">
+                           <img src="images/happy.jpg" alt="">
+                   <div class="collection-content">
+                        <h1 class="text-center">HAPPY</h1>
+                   </div>
+                   </div>
+                </div>
+
+                <div class="col-md-3 d-flex col-md-3 d-flex justify-content-center"  data-aos="fade-right">
+                    <div class="collection-card">
+                           <img src="images/night.jpg" alt="">
+                   <div class="collection-content">
+                        <h1 class="text-center text-info">NIGHT</h1>
+                         
+                   </div>
+                   </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+<section class="py-5 text-center region-tab" id="explore">
+    <div class="container">
+
+      <h2 class="fw-bold text-center text-dark">Set your mood here....</h2>
+                  <button class="btn btn-outline-info region-btn mt-5 text-dark" data-region="calm">
+                   <i class="fi fi-rr-bio-leaves"></i> Enter Calm Mood</button>
+                  <button class="btn btn-outline-info region-btn mt-5 text-dark" data-region="focus">
+                          <i class="bi bi-bullseye"></i> Enter Focus Mood</button>
+                  <button class="btn btn-outline-info region-btn mt-5 text-dark" data-region="happy">
+                          <i class="bi bi-emoji-laughing-fill text-dark"></i> Enter Happy Mood</button>       
+                  <button class="btn btn-outline-info region-btn mt-5 text-dark" data-region="night">
+                          <i class="bi bi-moon-fill text-dark"></i> Enter Night Mood</button>
+
+    <div class="row g-4 py-4">
+
+      <div class="text-center mood-item mb-5 d-none" data-region="calm">
+    <h2 class="fw-semibold text-dark">
+       Calm Mode</h2>
+    <p class="text-muted">A gentle space to slow down, breathe, and reconnect.</p>
+  </div>
+
+        <div class="col-md-4 mood-item d-none" data-region="calm" data-aos="fade-right">
+          <div class="calm-card">
+             <video autoplay muted loop class="card-img-top" >
+    <source src="images/ctb.mp4" type="video/mp4">
+  </video>
+            <div class="calm-content">
+            <h5 class="card-title">A quiet thought for you....</h5>
+            <p class="card-text mt-4">
+              “Be calm. Just let things be.”
+            </p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Recommended Activity -->
+      <div class="col-md-4 mood-item d-none" data-region="calm" data-aos="fade-right">
+        <div class="calm-card">
+          <img src="images/ca.jpg" alt="">
+          <div class="calm-content1">
+          <h5 class="text-warning shadow-lg">Recommended Activity</h5>
+          <ul>
+            <li>Take 5 slow, deep breaths</li>
+              <li>Stretch your shoulders</li>
+              <li>Step outside briefly</li>
+              <li>Drink water mindfully</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+
+      <!-- Music Vibe -->
+      <div class="col-md-4 mood-item d-none" data-region="calm" data-aos="fade-right">
+        <div class="calm-card">
+          <img src="images/cm.jpg" alt="">
+          <div class="focus-content">
+            <div class="icon">🎧</div>
+          <h5>Music Vibe</h5>
+          <p class="music-vibe">
+            Soft piano · Rain ambience · Nature tones
+          </p>
+          <span class="sound-indicator"></span>
+        </div>
+      </div>
+      </div>
+
+<div class="col-md-12 mood-item d-none" data-region="calm">
+  <div class="grounding-card">
+    <div class="grounding-header">
+      <span class="grounding-icon">🌿</span>
+      <h5>Grounding Moment</h5>
+    </div>
+
+    <div class="grounding-body">
+      <div class="grounding-step">
+        <span class="count">3</span>
+        <p>Things you can <strong>see</strong></p>
+      </div>
+
+      <div class="grounding-step">
+        <span class="count">2</span>
+        <p>Things you can <strong>feel</strong></p>
+      </div>
+
+      <div class="grounding-step">
+        <span class="count">1</span>
+        <p>Thing you can <strong>hear</strong></p>
+      </div>
+    </div>
+
+    <div class="grounding-footer">
+      <small>Take a slow breath between each step.</small>
+    </div>
+  </div>
+</div>
+<h1 class="text-center mood-item d-none text-warning" data-region="calm">Breath with me</h1>
+<section class="breathing py-5 mood-item d-none" data-region="calm">
+  
+     <div class="breathing-wrapper mood-item d-none" data-region="calm">
+      <h1 class="text-center text-warning mt-0">
+        Let's Relieve Stress
+      </h1>
+      <h5 class="text-center text-light mb-5">
+        Breath in.........Hold..........Breath out
+      </h5>
+  <div class="breathing-orb">
+    <span class="ring"></span>
+    <span class="ring"></span>
+    <span class="ring"></span>
+    <div class="orb-core"></div>
+  </div>
+
+  <p class="breathing-instruction" id="breathText">
+    Inhale
+  </p>
+</div>
+</section>
+<div class="text-center text-light mt-4 mood-item d-none" data-region="calm" data-aos="fade-right">
+        <p class="opasity-75 text-light">Ease your body. Ease your mind.</p>
+      </div>
+
+      <!-- .......................focus.............................. -->
+
+      <div class="text-center mood-item mb-5 d-none" data-region="focus">
+    <h2 class="fw-semibold" style="font-size: xx-large;">Focus Mode</h2>
+    <p class="text-muted">Designed to reduce noise and sharpen attention</p>
+  </div>
+
+    <!-- Thought Card -->
+    <div class="col-md-4 mood-item d-none" data-region="focus" data-aos="fade-right">
+      <div class=" calm-card">
+        <img src="images/ft.jpg" alt="">
+        <div class="calm-content">
+        <h5 class="card-title">Today’s Thought.......</h5>
+        <p class="text-center  mt-4 text-light"
+         style="font-family: cursive; font-size: larger;">
+        "Clarity comes from finishing one thing at a time".</p>
+      </div>
+    </div>
+    </div>
+
+    <!-- Activity Card -->
+    <div class="col-md-4 mood-item d-none" data-region="focus" data-aos="fade-right">
+      <div class="mood-card focus-card">
+        <img src="images/fa.jpg" alt="">
+        <div class="focus-content">
+        <div class="icon">⏱</div>
+        <h5 class="text-warning">Recommended Activity</h5>
+        <ul>
+          <li>Plan your next 45 minutes</li>
+          <li>Close unnecessary tabs</li>
+          <li>Start a single task timer</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+    <!-- Music Card -->
+    <div class="col-md-4 mood-item d-none" data-region="focus" data-aos="fade-right">
+      <div class="mood-card focus-card">
+        <img src="images/fm.jpg" alt="">
+        <div class="focus-content">
+        <div class="icon">🎧</div>
+        <h5 class="text-info">Music Vibe</h5>
+        <p class="music-vibe">Lo-fi beats · Instrumental · Soft rain</p>
+
+        <div class="waveform justify-content-center">
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+</div>
+
+   
+
+
+
+
+<section class="focus-timer py-5 mood-item d-none" id="focus" data-region="focus">
+      
+        
+  <div class="container">
+  <h5 class="fw-semibold mood-item d-none" style="font-size: 2.5rem;"  data-region="focus">Focus Session</h5>
+  <div class="timer-display mood-item d-none" id="timer" data-region="focus">
+    00:00
+  </div>
+  <div class="timer-controls mood-item d-none" data-region="focus">
+    <button class="btn btn-outline-light mt-5 fw-bold"
+     onclick="setTime(25)">
+      25 min
+    </button>
+     <button class="btn btn-outline-light mt-5 fw-bold"
+     onclick="setTime(45)">
+      45 min
+    </button>
+     <button class="btn btn-outline-light mt-5 fw-bold"
+     onclick="setTime(90)">
+      90 min
+    </button>
+  </div>
+   <button class="timer-btn btn-outline-light mt-5 mood-item d-none" data-region="focus"
+     onclick="startTimer()">
+     Start Focus
+    </button>
+    <button class="timer-btn btn-outline-light mt-5 mood-item d-none" data-region="focus"
+     onclick="stopTimer()">
+     Stop
+    </button>
+    </div>
+  
+</section>
+
+<section class="environ-bar py-4 mood-item d-none" data-region="focus">
+  <span id="env-notify">🔕 Notifications Off</span>
+  <span id="env-sound">🎧 Lo-fi Playing</span>
+  <span id="env-session">⏱ Session status</span>
+</section>
+
+<!-- ......................night mood................................ -->
+<div class="text-center mb-5 mood-item d-none" data-region="night">
+    <h2 class="fw-semibold" style="font-size: xx-large;">Night Mood</h2>
+    <p class="text-secondary">
+      A quiet space for reflection and gentle closure
+    </p>
+    <small class="text-secondary">
+      The world slows down. You don’t have to rush
+    </small>
+  </div>
+  <!-- .....................star background.................. -->
+   
+
+   
+  
+
+      <div class="col-md-4 mood-item d-none  align-items-center" id="night" data-region="night" data-aos="fade-right">
+        <div class="night-card">
+         <video autoplay muted loop class="card-img-top" >
+    <source src="images/night.mp4" type="video/mp4">
+  </video>
+         <div class="night-content">
+          <h5 class="text-center mb-4">Tonight's Reflection</h5>
+          <h4>"What stayed with you today?"</h4>
+         </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 mood-item d-none" data-region="night" data-aos="fade-right">
+        <div class="night-card">
+          <img src="images/nj.jpg" alt="">
+         <div class="night-content">
+          <h5 class="text-md-middle">Gentle Journal</h5>
+          <p>One thing I can release before sleep:</p>
+          <textarea class="form-control night-input" 
+          rows="3" placeholder="Write here......"></textarea>
+         </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mood-item d-none" data-region="night" data-aos="fade-right">
+        <div class="night-card">
+          <img src="images/na.jpg" alt="">
+          <div class="night-content">
+            <h5>Wind Down</h5>
+            <ul>
+              <li>Dim Screen brightness</li>
+              <li>Strech your shoulders</li>
+              <li>Drink water slowly</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-md-6 mood-item d-none" data-region="night" data-aos="fade-right">
+        <div class="night-card vertical">
+        <img src="images/n-rain.jpg" alt="">
+          <div class="night-content">
+            <h5>Night Soundscape</h5>
+            <p>Soft breeze · Distant rain · Fireplace crackle</p>
+
+            <div class="wave-night mt-3">
+              <span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-6 mood-item d-none" data-region="night" data-aos="fade-right">
+        <div class="night-card vertical">
+          <img src="images/nm.jpg" alt="">
+          <div class="night-content py-5">
+            <h5>Moon Phase</h5>
+            <p>Waning Crescent - A time for rest & release</p>
+          </div>
+        </div>
+      </div>
+
+       <div class="text-center py-5 mood-item d-none" data-region="night" data-aos="fade-right">
+          <h5>How are you feeling tonight?</h5>
+
+          <div class="night-emotions mt-3">
+            <button class="btn btn-outline-light emotion-btn">Calm</button>
+            <button class="btn btn-outline-light emotion-btn">Tired</button>
+            <button class="btn btn-outline-light emotion-btn">Reflective</button>
+            <button class="btn btn-outline-light emotion-btn">Restless</button>
+          </div>
+         </div>
+        
+
+      <div class="text-center text-light mt-4 mood-item d-none" data-region="night" data-aos="fade-right">
+        <p class="opasity-75">The day is complete. Rest comes next</p>
+      </div>
+
+<!-- ................................Happy mood..................... -->
+
+<div class="text-center mood-item d-none" data-region="happy">
+  <h2 class="fw-bold mb-4">Happy Mood</h2>
+  <p class="text-muted">A space to lift your mood and enjoy the moment</p>
+  <small class="text-muted">Let yourself feel good- no reason needed</small>
+</div>
+
+<div class="col-md-4 mood-item d-none" data-region="happy" data-aos="zoom-in">
+  <div class="calm-card">
+    <img src="images/ht.jpg" alt="">
+    <div class="calm-content">
+      <h6 class="card-title py-5 text-warning">Today’s Bright Thought...</h6>
+      <h4 class="text-center text-light"
+         style=" font-size: larger;">
+         "This moment is already enough"</h4>
+    </div>
+    
+  </div>
+</div>
+
+<div class="col-md-4 mood-item d-none" data-region="happy" data-aos="zoom-in">
+  <div class="calm-card">
+    <img src="images/ha.jpg" alt="">
+    <div class="focus-content">
+      <h3 class="text-warning">Feel-Good Activity</h3>
+      <ul>
+        <li class="fw-bold"><i class="bi bi-brightness-high-fill text-warning"></i> Step outside for 2 minutes</li>
+        <li class="fw-bold"><i class="bi bi-music-note-beamed text-warning"></i> Play your favorite song</li>
+        <li class="fw-bold"><i class="bi bi-chat-heart-fill text-danger"></i> Send a kind message</li>
+        <li class="fw-bold"><i class="bi bi-person-arms-up text-warning"></i> Stretch your arms and smile</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<div class="col-md-4 mood-item d-none" data-region="happy" data-aos="zoom-in">
+  <!-- <div class="calm-card">
+    <img src="" alt="">
+  </div> -->
+  <div class="calm-card">
+  <video autoplay muted loop class="card-img-top" >
+    <source src="images/happy.mp4" type="video/mp4">
+  </video>
+  <div class="calm-content1 text-center">
+    <h2 class="text-warning">Joy Sparks</h2>
+    <ul>
+      <li>Warm sunlight</li>
+      <li>Fresh air</li>
+      <li>First sip of coffee</li>
+      <li>A small win today</li>
+    </ul>
+  </div>
+</div>
+</div>
+
+
+<div class="col-md-4 mood-item d-none" data-region="happy" data-aos="zoom-in">
+<div class="calm-card">
+  <video autoplay muted loop class="card-img-top" >
+    <source src="images/music.mp4" type="video/mp4">
+  </video>
+  <div class="focus-content text-center">
+    <h5 class="text-light"><i class="bi bi-music-note-beamed text-warning">
+    </i> Sound Vibe</h5>
+    <h6> Soft pop · Acoustic · Morning beats</h6>
+    <div class="waveform justify-content-center">
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+  </div>
+</div>
+</div>
+
+<div class="col-md-4 mood-item d-none" data-region="happy" data-aos="fade-right">
+        <div class="night-card">
+          <img src="images/hp.jpg" alt="">
+         <div class="focus-content">
+          <h5 class="text-md-middle">One Good Thing</h5>
+          <p>What made you smile today-</p>
+          <textarea class="form-control night-input" 
+          rows="3" placeholder="Write here......"></textarea>
+         </div>
+        </div>
+      </div>
+
+<div class="col-md-4 mood-item d-none" data-region="happy" data-aos="zoom-in">
+  <div class="calm-card">
+    
+   <video autoplay muted loop class="card-img-top" >
+    <source src="images/sk.mp4" type="video/mp4">
+  </video>
+
+    <div class="visual-content sticky-top">
+      <h5 class="fw-bold text-center text-dark">Shades of petals </h5>
+      <p class="text-center text-primary-custom1">Enjoy the color of now.</p>
+      <div class="visual-buttons text-center">
+      <button class="Visual-btn1"></button>
+      <button class="Visual-btn2"></button>
+      <button class="Visual-btn3"></button>
+      <button class="Visual-btn4"></button>
+      <button class="Visual-btn5"></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class=" col-md-12  mood-item d-none" data-region="happy">
+  <div class="grounding-card">
+    <div class="grounding-header">
+      <span class="grounding-icon">🌿</span>
+      <h5>Share The Joy</h5>
+    </div>
+
+    <div class="grounding-body">
+      <div class="grounding-step">
+        <span class="count">3</span>
+        <p>Compliment <strong>Someone</strong></p>
+      </div>
+
+      <div class="grounding-step">
+        <span class="count">2</span>
+        <p>Thank yourself</p>
+      </div>
+
+      <div class="grounding-step">
+        <span class="count">1</span>
+        <p>Celebrate with a small win</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+   <div class="energy-indicator mood-item d-none" data-region="happy" data-aos="fade-left">
+      <h5 class="energy-title mt-3">Current energy</h5>
+      <div class="energy-buttons ">
+      <button class=" energy-btn " data-level="low">Low</button>
+       <button class="energy-btn " data-level="medium">Medium</button>
+        <button class=" energy-btn " data-level="high">High</button>
+        <button class="energy-btn" data-level="reset">Reset</button>
+ </div>
+    <div class="energy-bar">
+      <div class="energy-fill"></div>
+    </div>
+    <p class="energy-text">Select how you feel right now...</p>
+  </div>
+
+  <div class="text-center text-light mt-4 mood-item d-none" data-region="happy" data-aos="fade-right">
+        <p class="opasity-75 text-dark">Carry this feeling gently into what’s next.</p>
+      </div>
+  
+
+
+  </div>
+ </div>
+</section>
+
+
+<footer class="pt-5  bg-primary-custom1">
+  <!-- <section class="footer-section "> -->
+    <div class="container">
+  <div class="row g-4">
+    <div class="col-lg-4 col-md-6 ">
+  <h2 class="f-title  text-md-start">Mood based web page</h2>
+  <p class="f-text  text-muted text-md-start mt-4">Uplift your mood by scrolling</p>
+
+</div>
+  
+    <div class="col-lg-2 col-md-6 ">
+      <h5 class="text-dark justify-content-center fw-bold">MOODS</h5>
+      <ul class="justify-content-center text-dark">
+        <li><a class="text-dark text-decoration-none" href="#calm"> CALM</a></li>
+        <li><a class="text-dark text-decoration-none" href="#focus">FOCUS</a></li>
+        <li><a class="text-dark text-decoration-none" href="#happy">HAPPY</a></li>
+        <li><a class="text-dark text-decoration-none" href="#night">NIGHT</a></li>
+      </ul>
+    </div>
+ 
+
+   <!-- Support -->
+      <div class="col-lg-2 col-md-6">
+        <h5 class="fw-bold mb-4">Support</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-dark text-decoration-none">FAQs</a></li>
+          <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Shipping</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="fw-semibold text-primary-custom2 mb-4">Contact</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><i class="bi bi-geo-alt-fill text-danger"></i> Dhaka, Bangladesh</li>
+          <li class="mb-2"><i class="bi bi-telephone-fill text-dark"></i> +880 1XXX-XXXXXX</li>
+          <li class="mb-2"><i class="bi bi-envelope-at-fill text-dark"></i> support@moodweb.com</li>
+          <li><i class="bi bi-clock-fill text-dark"></i> Sat – Thu: 10AM – 8PM</li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="fw-semibold text-primary-custom2  mb-4">Stay Inspired</h5>
+       
+
+        <form class="d-flex">
+          <input type="email" class="form-control me-2" placeholder="Your email">
+          <button class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+
+    </div>
+
+    <hr class="my-2">
+
+    <!-- Bottom -->
+    <div class="text-center ">
+      <small class="text-primary-custom1">
+        © 2026 MoodWeb. Designed with Calmness
+      </small>
+    </div>
+ </div>
+</footer>
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com" type="module"></script>
+<script src="main.js"></script>
+
+<script>
+  /* ---------------- AOS ---------------- */
+  AOS.init({
+    duration: 1000,
+    once: false,
+    easing: 'ease-in-out',
+  });
+
+ 
+
+   
+</script>
+
+
+</body>
+</html>
